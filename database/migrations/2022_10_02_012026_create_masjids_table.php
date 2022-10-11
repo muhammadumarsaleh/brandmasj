@@ -15,12 +15,14 @@ return new class extends Migration
     {
         Schema::create('masjid', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->string('nama');
             $table->string('alamat');
             $table->string('warna');
             $table->string('penanggung_jawab');
             $table->string('nohp');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
+            $table->string('gambar');
             $table->timestamps();
         });
     }
