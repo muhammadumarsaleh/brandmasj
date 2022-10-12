@@ -15,18 +15,6 @@
     <script src="{{ asset('backend/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('backend/js/demo/chart-pie-demo.js') }}"></script>
 
-
-<script src="//code.jquery.com/jquery-3.4.1.js"></script>
-<script src="//unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="dist/js/bootstrap-colorpicker.js"></script>
-<script>
-  $(function () {
-    // Basic instantiation:
-    $('#demo-input').colorpicker();
-    
-    // Example using an event, to change the color of the #demo div background:
-    $('#demo-input').on('colorpickerChange', function(event) {
-      $('#demo').css('background-color', event.color.toString());
-    });
-  });
-</script>
+    <script type="text/javascript">
+      $('.colorpicker').colorpicker({});
+    </script>
